@@ -9,6 +9,6 @@ template:
       connectorRef: public_repo
       image: gittools/gitversion
       shell: Bash
-      command: /harness
+      command: /tools/dotnet-gitversion
   identifier: GitVersion
   versionLabel: V1
