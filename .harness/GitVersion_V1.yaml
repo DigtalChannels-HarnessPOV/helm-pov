@@ -8,7 +8,7 @@ template:
     spec:
       connectorRef: public_repo
       image: gittools/gitversion
-      shell: Sh
-      command: $(pwd)
+      shell: Bash
+      command: $PWD
   identifier: GitVersion
   versionLabel: V1
