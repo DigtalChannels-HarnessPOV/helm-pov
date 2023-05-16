@@ -9,6 +9,6 @@ template:
       connectorRef: public_repo
       image: gittools/gitversion
       shell: Sh
-      command: gitversion
+      command: $PWD
   identifier: GitVersion
   versionLabel: V1
