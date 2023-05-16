@@ -9,7 +9,9 @@ template:
       connectorRef: public_repo
       image: gittools/gitversion
       shell: Bash
-      command: /tools/dotnet-gitversion /output buildserver
+      command: |-
+        /tools/dotnet-gitversion /output buildserver
+        printenv
       outputVariables:
         - name: GitVersion_SemVer
   identifier: GitVersion
