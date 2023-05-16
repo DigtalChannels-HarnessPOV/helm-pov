@@ -10,7 +10,7 @@ template:
       image: gittools/gitversion
       shell: Bash
       command: |-
-        /tools/dotnet-gitversion /output buildserver
+        export SemVer=$(/tools/dotnet-gitversion /output json /showvariable SemVer)
         printenv
       outputVariables:
         - name: GitVersion_SemVer
