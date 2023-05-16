@@ -1,0 +1,14 @@
+template:
+  name: GitVersion
+  type: Step
+  projectIdentifier: default_project
+  orgIdentifier: default
+  spec:
+    type: Run
+    spec:
+      connectorRef: public_repo
+      image: gittools/gitversion
+      shell: Sh
+      command: gitversion
+  identifier: GitVersion
+  versionLabel: V1
