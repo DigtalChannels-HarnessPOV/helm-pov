@@ -9,10 +9,9 @@ template:
       connectorRef: public_repo
       image: gittools/gitversion
       shell: Bash
-      command: |-
+      command: |
         export SemVer=$(/tools/dotnet-gitversion /output json /showvariable SemVer)
-        printenv
       outputVariables:
-        - name: GitVersion_SemVer
+        - name: SemVer
   identifier: GitVersion
   versionLabel: V1
