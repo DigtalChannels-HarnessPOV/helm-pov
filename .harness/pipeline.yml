@@ -1,0 +1,27 @@
+pipeline:
+  name: helm_test
+  identifier: helm_test
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  name: Get Version
+                  identifier: Get_Version
+                  template:
+                    templateRef: GitVersion
+                    versionLabel: v1
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.HarnessPOC
+        build: <+input>
