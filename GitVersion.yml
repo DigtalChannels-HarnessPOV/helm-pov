@@ -4,9 +4,10 @@ branches:
     regex: ^master$|^main$
     tag: ""
     is-release-branch: true
+    increment: Patch
   feature:
     regex: ^feat[/-]
-    increment: Minor
+    increment: Inherit
     tag: useBranchName
   bugfix:
     regex: ^fix[/-]
