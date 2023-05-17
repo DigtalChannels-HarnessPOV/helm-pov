@@ -1,0 +1,81 @@
+replicaCount: 1
+
+image:
+  repository: "nginx"
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+#nameOverride is prepended onto the .Release.name (this is the name you specify when you do helm install command)
+#e.g. nameOverride: "my-opf-app" and .Release.name is "my-opf-release" then name would be "my-opf-release-my-opf-app"
+#fullNameOverride replaces the entire name including the release name.
+nameOverride: ""
+fullnameOverride: "my-app"
+
+#These are labels that are applied to all opf templated resources
+commonLabels:
+  oneportal.vodafone.com/organization: "vf-group"
+  oneportal.vodafone.com/team: "VBIT Digital Channels"
+  oneportal.vodafone.com/chart-version: "0.1.0"
+  oneportal.vodafone.com/name: "my-app"
+
+## injected environment variables, you can inject variables directly and/or from existing secrets
+envVars:
+  standard:
+    - name: OPF_APPLICATION_NAME
+      value: "my-app"
+    - name: OPF_RELEASE_NAME
+      value: "{{ .Release.Name }}"
+  #fromSecret:
+  #  - name: MY_SECRET_ENV
+  #    secret:
+  #      name: secret-name
+  #      key: password
+  #      optional: false
+
+## If you want to include volumes into your deployment
+#volumes:
+#  - name: client-cert
+#    secret:
+#      secretName: dxl-nonprod-client
+#      optional: false
+#volumeMounts:
+#  - name: client-cert
+#    mountPath: "/code/cert"
+#    readonly: true
+
+service:
+  enabled: true
+  type: ClusterIP
+  port: 80
+  targetPort: 8888
+
+ingress:
+  enabled: false
+
+resources: {}
+    # limits:
+    #   cpu: 100m
+    #   memory: 128Mi
+    # requests:
+    #   cpu: 100m
+    #   memory: 128Mi
+
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+
+autoscaling:
+  enabled: false
+  #minReplicas: 1
+  #maxReplicas: 100
+  #targetCPUUtilizationPercentage: 80
+  #targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+
+

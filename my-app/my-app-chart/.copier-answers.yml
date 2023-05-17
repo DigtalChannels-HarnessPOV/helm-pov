@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier
+_commit: d92c928
+_src_path: https://github.vodafone.com/VFGroup-OnePortalFramework/helm-template.git
+application_description: Remember the magic is this, the more we share, the more we
+    have!
+application_health_path: None
+application_hostname: None
+application_name: my-app
+application_path: None
+aws_alb_group_name: None
+aws_cert_arn: None
+aws_waf_id: None
+chart_name: my-app-chart
+chart_type: application
+chart_version: 0.1.0
+image_repository: nginx
+image_tag: latest
+ingress_class: null
+ingress_enabled: false
+vf_organization: vf-group
+vf_team: VBIT Digital Channels
+your_email: oneportalians@vodafone.com
+your_name: Martyn Crow
