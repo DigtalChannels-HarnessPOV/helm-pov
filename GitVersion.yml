@@ -3,7 +3,6 @@ branches:
   master:
     regex: ^master$|^main$
     tag: ""
-    increment: Patch
     is-release-branch: true
   feature:
     regex: ^feat?[/-]
