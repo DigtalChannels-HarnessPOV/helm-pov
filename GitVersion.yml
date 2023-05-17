@@ -7,7 +7,7 @@ branches:
     increment: Patch
   feature:
     regex: ^feat[/-]
-    increment: Inherit
+    increment: Minor
     tag: useBranchName
   bugfix:
     regex: ^fix[/-]
