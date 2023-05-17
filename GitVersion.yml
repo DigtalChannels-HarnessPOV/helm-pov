@@ -5,7 +5,7 @@ branches:
     tag: ""
     is-release-branch: true
   feature:
-    regex: ^feat?[/-]
+    regex: ^feat[/-]
     increment: Minor
     tag: useBranchName
   bugfix:
