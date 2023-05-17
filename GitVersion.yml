@@ -1,5 +1,19 @@
 mode: Mainline
-branches: {}
+branches:
+  master:
+    regex: ^master$|^main$
+    tag: ""
+    increment: Patch
+    is-release-branch: true
+  feature:
+    regex: ^feat?[/-]
+    increment: Minor
+    tag: useBranchName
+  bugfix:
+    regex: ^fix[/-]
+    increment: Patch
+    tag: useBranchName
+    source-branches: ["main"]
 ignore:
   sha: []
 merge-message-formats: {}
