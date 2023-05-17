@@ -1,0 +1,3 @@
+{{- if .Values.service.enabled -}}
+{{- tpl ( include "channels-library.service" . ) $ }}
+{{- end -}}

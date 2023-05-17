@@ -1,0 +1,6 @@
+dependencies:
+- name: channels-library
+  repository: https://nexus.tools.aws.vodafone.com/repository/opf-helm
+  version: 0.1.14
+digest: sha256:26bc6f554450d8b1e26e9bf5c7cfe997fe00259491b59f8354d145bbbbb8c313
+generated: "2023-05-17T13:52:57.023901+01:00"

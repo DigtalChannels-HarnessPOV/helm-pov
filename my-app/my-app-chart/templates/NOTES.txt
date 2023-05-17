@@ -1,0 +1,52 @@
+
+                                                   @@@@pp,_
+                                                   0BBBBBBBB@p,
+                                           _,pp@@@@@@@@@E500BBB@p_
+                                        ,@@BNBBNMMMMMN00BB@@@50BBBK
+                                     _@@BBN"`            "T0NN@EM"
+                                    $0NBP                   'M"
+                                   @@BP
+                                  @@BP   _,,,,_
+                                 jENE  ,@0B"`@@@@_
+                                 ]NBL $@BL   `T0NNL
+                                 ]NBL 0Nb      ]ENb @@NN0@_ $@B0@p
+                                 ]NNb ]ENp_   ,@NBL ]b  ]Nbl@N@@0BL
+                                 ]NNNL T0BB@@@BBB"  ]N  ]Nb'0@pppp
+                                 $BNNNp  `"""""     `"  `"`  `"""`
+                                 $BBNBB@,                   _pp_
+                                 $BBL`0BB@p,             _;@0BBb@,
+                                 $BBL  `T0BBB@ppp,,,,pp@@BBBN@@BBBN
+                                 $BBL      "MN000BBNBNBNN@@@BBBBM`
+                                 $BBL             `@@@BBBBBBBM"
+                                 $BBL             '0RBNMM"`
+                                 $BBL
+                                 $BBL
+                                 $BBL
+                                 $BBL
+                                 $BBL
+                                 TRN"
+
+You have deployed the following release: {{  .Release.Name  }}.
+To get further information, you can run the commands:
+  $ helm status {{ .Release.Name }}
+  $ helm get all {{ .Release.Name  }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+asciiart.club

@@ -1,0 +1,15 @@
+apiVersion: v2
+name: "my-app-chart"
+description: "Remember the magic is this, the more we share, the more we have!"
+type: application
+version: 0.1.0
+maintainers:
+  - name: "Martyn Crow"
+    email: "oneportalians@vodafone.com"
+
+dependencies:
+  - name: channels-library
+    version: ~0.1.0
+    repository: https://nexus.tools.aws.vodafone.com/repository/opf-helm
+
+
