@@ -11,7 +11,7 @@ image:
   tag: ""
 test: test
 
-testone: test
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
